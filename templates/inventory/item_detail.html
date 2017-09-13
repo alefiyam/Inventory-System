@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Item Name</th>
+      <th>Vendor</th>
+      <th>Catalog</th>
+      <th>Size</th>
+      <th>Category</th>
+      <th>Created At</th>
+    </tr>
+  </thead>
+  <tbody>
+		    <tr>
+		      <th scope="row">1</th>
+		      <td>{{ lineitems.name }}</td>
+		      <td>{{ lineitems.vendor }}</td>
+		      <td>{{ lineitems.catalog }}</td>
+		      <td>{{ lineitems.size }}</td>
+		      <td>{{ lineitems.category }}</td>
+		      <td>{{ lineitems.date_added }}</td>
+		    </tr>
+  </tbody>
+</table>
+
+<a href="{% url 'inventory:items' %}" type="button" >Cancel</a>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
